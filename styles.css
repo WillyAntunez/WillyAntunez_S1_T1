@@ -1,0 +1,105 @@
+/* general configurations */
+body,
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFDF8;
+
+}
+
+/* title */
+.title {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0367A6;
+}
+
+/* Nav */
+.nav {
+    width: 90%;
+    max-width: 900px;
+    margin: 15px auto 10px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__button {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #2ba3ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    text-decoration: none;
+}
+
+.nav__button--disabled {
+    color: gray;
+    background-color: rgb(234, 234, 234);
+    border: none;
+    cursor: auto;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 560px) {
+    .nav__button {
+        width: 47%;
+    }
+}
+
+/* Place */
+.place {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.place__name {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: .6rem;
+    color: #758C20;
+}
+
+.place__img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.place__text {
+    font-weight: 400;
+}

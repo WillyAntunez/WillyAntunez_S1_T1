@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares turísticos de Honduras - La Ceiba</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+
+    <style>
+        /* general configurations */
+        body,
+        html {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+        }
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FDFDF8;
+
+        }
+
+        /* title */
+        .title {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto 10px auto;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0367A6;
+        }
+
+        /* Nav */
+        .nav {
+            width: 90%;
+            max-width: 900px;
+            margin: 15px auto 10px auto;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav__button {
+            width: 250px;
+            height: 50px;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background-color: #2ba3ff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            text-decoration: none;
+        }
+
+        .nav__button--disabled {
+            color: gray;
+            background-color: rgb(234, 234, 234);
+            border: none;
+            cursor: auto;
+            pointer-events: none;
+        }
+
+        @media screen and (max-width: 560px) {
+            .nav__button {
+                width: 47%;
+            }
+        }
+
+        /* Place */
+        .place {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+        }
+
+        .place__name {
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: .6rem;
+            color: #758C20;
+        }
+
+        .place__img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .place__text {
+            font-weight: 400;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="title">Lugares turísticos de Honduras</h1>
+    <nav class="nav">
+        <a href="./page4.html" class="nav__button nav__button--right">Anterior</a>
+        <a href="#" class="nav__button nav__button--left nav__button--disabled">Siguiente</a>
+    </nav>
+    <section class="place">
+        <img class="place__img" src="./img/la_ceiba.jpg" alt="La Ceiba">
+        <h2 class="place__name">La Ceiba</h2>
+        <p class="place__description">Conocida como la capital del ecoturismo de Honduras, es una de las ciudades más
+            turísticas del país, ofreciendo hermosas playas caribeñas y una vasta oferta de entretención, además de ser
+            puerta de entrada a los famosos Cayos Cochinos, y a otras reservas naturales, donde practicar rafting,
+            senderismo y escalada.</p>
+    </section>
+</body>
+
+</html>
